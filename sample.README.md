@@ -87,3 +87,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * etc
 
 Template is from <a href="https://gist.github.com/PurpleBooth/109311bb0361f32d87a2">here</a>.
+<br/>
+Check out the "blame" or "raw" views on this page to see how it's made. I just discovered blame and it's pretty cool.
