@@ -9,5 +9,5 @@
 <a href="https://www.gnu.org/licenses/gpl.html">
         GNU Public License (GPL) info
 </a><br/>
-Also check out sample.README.md and the blade and raw views on that page.
+Also check out sample.README.md and the blame and raw views on that page.
 I'm just starting to learn all the .md functionality.
