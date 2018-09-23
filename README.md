@@ -1,1 +1,1 @@
-This is a test file.
+# This is a project for solving the quadratic equation in C.
