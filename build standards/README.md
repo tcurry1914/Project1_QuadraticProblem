@@ -3,10 +3,10 @@
 
 <strong>syntax:</strong>
 ````
-$: make<br/>
-	gcc -o quad quad.c -lm		//Makefile procedure<br/><br/>
-$: make run<br/>
-	./quad<br/><br/>
+$: make
+	gcc -o quad quad.c -lm		//Makefile procedure
+$: make run
+	./quad
 $: make clean<br/>
-	rm quad<br/><br/>
+	rm quad
 ````
