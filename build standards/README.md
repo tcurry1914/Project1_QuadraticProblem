@@ -1,5 +1,5 @@
-<h1>Build standards will define how the program is built.</h1>
-<h2>We will be using the GNU C Compiler (gcc) with make.</h2>
+<h2>Build standards will define how the program is built.</h2>
+<h3>We will be using the GNU C Compiler (gcc) with make.</h3>
 
 <strong>syntax:</strong>
 ````
