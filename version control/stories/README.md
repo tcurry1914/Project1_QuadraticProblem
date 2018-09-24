@@ -7,10 +7,10 @@
 <tr><td>3</td><td>3 months</td><td>4</td><td>99%</td><td>1 year</td></tr>
 </thead>
   <body><tr></tr></body>
-<table>
-  <p>Another example from class:</p>
-<thead>
 </table>
+  <p>Another example from class:</p>
+</table>
+<thead>
   <tr><td colspan="2">Stories	Requirements</td></tr>
 </thead>
 <body>
