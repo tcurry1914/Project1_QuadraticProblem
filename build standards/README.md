@@ -1,12 +1,12 @@
-Build standards will define how the program is built.
-We will be using the GNU C Compiler (gcc) with make.
+<h1>Build standards will define how the program is built.</h1>
+<h2>We will be using the GNU C Compiler (gcc) with make.</h2>
 
-syntax:
-
- $: make
-	gcc -o quad quad.c -lm		//Makefile procedure
- $: make run
-	./quad
- $: make clean
-	rm quad
-
+<strong>syntax:</strong>
+````
+$: make<br/>
+	gcc -o quad quad.c -lm		//Makefile procedure<br/><br/>
+$: make run<br/>
+	./quad<br/><br/>
+$: make clean<br/>
+	rm quad<br/><br/>
+````
