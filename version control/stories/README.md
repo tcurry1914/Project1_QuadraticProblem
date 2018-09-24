@@ -12,7 +12,7 @@
   <p>Another example from class:</p>
 <table>
   <thead>
-    <tr><td colspan="2">Stories	Requirements</td></tr>
+    <tr><td>Stories</td><td>Requirements</td></tr>
   </thead>
   <body>
     <tr><td>1</td><td>Language (gcc or R)</td></tr>
