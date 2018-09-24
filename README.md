@@ -4,7 +4,6 @@ Improvements to basic solutions -
         math.stackexchange.com
 </a>
 
-<br/>
 GNU Public License (GPL) info - 
 <a href="https://www.gnu.org/licenses/gpl.html">
         gnu.org
