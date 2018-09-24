@@ -1,6 +1,5 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-cd ..
 echo $(pwd)
 LOG_DIR=logs
 make 2>&1 | tee $LOG_DIR/log
@@ -15,5 +14,4 @@ if cmp $LOG_DIR/log $LOG_DIR/correct_output; then
 else
   echo "Program output does not match the correct output."
 fi
-cd -
 exit

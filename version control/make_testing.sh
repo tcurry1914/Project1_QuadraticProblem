@@ -1,6 +1,7 @@
 #!/bin/bash
-
-LOG_DIR=./logs
+cd "$(dirname "$0")"
+cat pwd
+LOG_DIR=logs
 make 2>&1 | tee $LOG_DIR/log
 make run 2>&1 | tee -a $LOG_DIR/log
 make clean 2>&1 | tee -a $LOG_DIR/log

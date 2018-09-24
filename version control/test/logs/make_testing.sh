@@ -1,5 +1,4 @@
 #!/bin/bash
-cd "$(dirname "$0")"
 cd ..
 echo $(pwd)
 LOG_DIR=logs
