@@ -1,1 +1,1 @@
-<h3>I don't remember what VC stands for.  A cursory Google search turned up nothing.</h3>
+<h3>This is where our standards for version control will live.</h3>
