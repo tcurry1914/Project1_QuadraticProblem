@@ -1,6 +1,6 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-cat pwd
+echo $(pwd)
 LOG_DIR=logs
 make 2>&1 | tee $LOG_DIR/log
 make run 2>&1 | tee -a $LOG_DIR/log

@@ -1,6 +1,13 @@
-make: *** No targets specified and no makefile found.  Stop.
-make: *** No rule to make target 'run'.  Stop.
-make: *** No rule to make target 'clean'.  Stop.
-make: *** No rule to make target 'run'.  Stop.
-make: *** No targets specified and no makefile found.  Stop.
-make: *** No rule to make target 'run'.  Stop.
+gcc -Wall -Wpedantic -std=gnu99 -g src/quad.c -o build/quad
+./build/quad
+hello
+
+rm build/quad
+./build/quad
+make: ./build/quad: Command not found
+makefile:6: recipe for target 'run' failed
+make: *** [run] Error 127
+gcc -Wall -Wpedantic -std=gnu99 -g src/quad.c -o build/quad
+./build/quad
+hello
+
