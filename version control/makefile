@@ -1,8 +1,10 @@
+CC = gcc
+CFLAGS = -Wall -Wpedantic --std=gnu99
 all:
-	gcc -Wall -Wpedantic -std=gnu99 -g src/quad.c -o build/quad
-build:
-	gcc -Wall -Wpedantic -std=gnu99 -g src/quad.c -o build/quad
-run:
-	./build/quad
-clean:
-	rm build/quad
+	${CC} ${CFLAGS} -o build/quad.o src/quad.c -lm
+build/quad.o : src/quad.c src/quad.h
+	${CC} ${CFLAGS} -c src/quad.c
+run :
+	./build/quad.o
+clean :
+	rm build/quad.o

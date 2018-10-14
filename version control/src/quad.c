@@ -1,9 +1,8 @@
-#include <math.h>
-#include <stdio.h>
+#include "quad.h"
 
-int main()
+int main(int argc, char **argv)
 {
-    printf("hello\n\n");
+    printf("hello hello\n\n");
 
     return 0;
 }
