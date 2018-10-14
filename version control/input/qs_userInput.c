@@ -5,18 +5,19 @@
 	MAX_UI_SIZE = Maximum user input size
 */
 
-char *userInput(){
+int userInput(char *input){
 	
 	FILE *fp = fopen("logs/userInput.log", "w+");
 
-	char *input = malloc(sizeof(char) * MAX_UI_SIZE);
+	//char *input = malloc(sizeof(char) * MAX_UI_SIZE);
 	if (fgets(input, sizeof(char) * MAX_UI_SIZE, stdin) == NULL) {
 		fprintf(stdout, "Unexpected error: null value");
 		fprintf(fp, "Unexpected error: null value");
+		return -1;
 	}
 
 	fprintf(stdout, "User input received: %s\n", input);
 	fprintf(fp, "User input received: %s\n", input);
 
-	return input;
+	return 0;
 }

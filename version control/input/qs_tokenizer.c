@@ -5,14 +5,14 @@
 	that string into a struct which is passed back to the 
 	calling function
 */
-Values *tokenizer(char *str){
+int tokenizer(Values *vals, char *str){
 
 	FILE *fp = fopen("logs/tokenizer.log", "w+");
 	char* token;
 	char* theRest = str;
 	int set = -1;
 
-	Values *vals = (Values *) malloc(sizeof(Values));
+	//Values *vals = (Values *) malloc(sizeof(Values));
 
 	while((token = strtok_r(theRest," ,`~\\*+=!@#$%^&()/-_<>?:;[]{}|\'\"\n", &theRest))){
 		
@@ -51,6 +51,7 @@ Values *tokenizer(char *str){
 			else{
 				fprintf(stdout, "ERROR\n");
 				fprintf(fp, "ERROR\n");
+				return -1;
 			}
 		}
 
@@ -58,9 +59,9 @@ Values *tokenizer(char *str){
 
 
 	//Format printing
-	fprintf(stdout, "\n\n");
-	fprintf(fp, "\n\n");
+	fprintf(stdout, "Tokenization completed successfully\n");
+	fprintf(fp, "Tokenization completed successfully\n");
 	fclose(fp);
 
-	return vals;
+	return 0;
 }//End of tokenizer()

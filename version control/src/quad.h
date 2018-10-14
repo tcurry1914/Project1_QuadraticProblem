@@ -14,6 +14,6 @@ typedef struct values
 
 int main(int, char const **);
 int testMain(int, char const *argv[]);
-Values *tokenizer(char *str);
-char *userInput();
+int tokenizer(Values *, char *str);
+int userInput(char *);
 int validate(Values *);
