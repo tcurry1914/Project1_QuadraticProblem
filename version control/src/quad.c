@@ -1,8 +1,8 @@
 #include "quad.h"
 
-int main(int argc, char **argv)
+int main(int argc, char const *argv[])
 {
-    printf("hello hello\n\n");
+	testMain(argc, argv);
 
-    return 0;
+	return 0;
 }
