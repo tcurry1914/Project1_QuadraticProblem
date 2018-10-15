@@ -18,6 +18,30 @@ int validate(Values *vals_M)
 	fprintf(stdout, "char3: %s\n", char3);
 	fprintf(fp, "char3: %s\n", char3);
 
+	for (int i = 0; i < strlen(char1); i++) {
+		if (isalpha(char1[i])) {
+			fprintf(stdout, "Validate failed because char*1 has alpha input.\n");
+			fprintf(fp, "Validate failed because char*1 has alpha input.\n");
+			return -1;
+		}
+	}
+
+	for (int i = 0; i < strlen(char2); i++) {
+		if (isalpha(char2[i])) {
+			fprintf(stdout, "Validate failed because char*2 has alpha input.\n");
+			fprintf(fp, "Validate failed because char*2 has alpha input.\n");
+			return -1;
+		}
+	}
+
+	for (int i = 0; i < strlen(char3); i++) {
+		if (isalpha(char3[i])) {
+			fprintf(stdout, "Validate failed because char*3 has alpha input.\n");
+			fprintf(fp, "Validate failed because char*3 has alpha input.\n");
+			return -1;
+		}
+	}
+
 	char *pend;
 
 	float1 = strtof(char1, &pend);
@@ -70,7 +94,7 @@ int validate(Values *vals_M)
 	fprintf(fp, "d1: %f\n", d1);
 	fprintf(stdout, "d2: %f\n", d2);
 	fprintf(fp, "d2: %f\n", d2);
-	fprintf(stdout, "val3: %f\n", d3);
+	fprintf(stdout, "d3: %f\n", d3);
 	fprintf(fp, "d3: %f\n", d3);
 	
 	fclose(fp);

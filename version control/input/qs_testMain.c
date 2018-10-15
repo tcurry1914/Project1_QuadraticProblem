@@ -18,9 +18,10 @@ int testMain(int argc, char const *argv[])
 		fprintf(stdout, "Input: %s\n", input);
 		fprintf(fp, "Input: %s\n", input);
 	}
-
+	
 	//Split raw user input into three values
 	Values *vals_M = (Values *) malloc(sizeof(Values));
+
 	int tokenizerOutput = tokenizer(vals_M, input);
 	if (tokenizerOutput == -1) {
 		fprintf(stdout, "Program failed at tokenizer stage\n");
@@ -39,11 +40,9 @@ int testMain(int argc, char const *argv[])
 	if (validateOutput == -1) {
 		fprintf(stdout, "Program failed in validate stage.\n");
 		fprintf(fp, "Program failed in validate stage.\n");
-		return -1;
 	} else {
 		fprintf(stdout, "All three values have been validated.\n");
 		fprintf(fp, "All three values have been validated.\n");
-		return -1;
 	}
 	
 	fclose(fp);

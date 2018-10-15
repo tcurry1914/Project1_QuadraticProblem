@@ -8,12 +8,14 @@
 int userInput(char *input){
 	
 	FILE *fp = fopen("logs/userInput.log", "w+");
-
-	//char *input = malloc(sizeof(char) * MAX_UI_SIZE);
-	if (fgets(input, sizeof(char) * MAX_UI_SIZE, stdin) == NULL) {
-		fprintf(stdout, "Unexpected error: null value");
-		fprintf(fp, "Unexpected error: null value");
-		return -1;
+	int ret = -1;
+	while (ret == -1) {
+		if (fgets(input, sizeof(char) * MAX_UI_SIZE, stdin) == NULL) {
+			fprintf(stdout, "Unexpected error: null value");
+			fprintf(fp, "Unexpected error: null value");
+		} else {
+			ret = 0;
+		}
 	}
 
 	fprintf(stdout, "User input received: %s\n", input);
